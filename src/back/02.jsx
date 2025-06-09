@@ -2,15 +2,14 @@
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import MyClock from './02/MyClock';
 
-import MyListItem from './04/MyListItem';
 
 function App() {
 
   return (
-    <>
-        <MyListItem /> 
-        
+    <>      
+         <MyClock /> 
     </>
   )
 }
