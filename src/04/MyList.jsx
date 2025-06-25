@@ -1,4 +1,3 @@
-import React from 'react'
 import MyListData from './MyListData.json'
 import MyListItem from './MyListItem'
 export default function MyList() {

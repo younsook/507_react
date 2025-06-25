@@ -5,8 +5,6 @@ import './App.css'
 import GroupText from './01/GroupText'
 import MyList from './04/MyList'
 import MyListItem from './04/MyListItem'
-import TailBall from './component/TailBall'
-import Lotto from './05/Lotto.jsx'
 
 function App() {
 
@@ -28,7 +26,7 @@ function App() {
             overflow-y-auto py-10
             flex flex-col justify-start items-center
            '>
-      <Lotto />
+       <MyList /> 
       </main>
       <footer className='w-full min-h-20
            bg-black text-amber-50

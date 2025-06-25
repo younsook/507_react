@@ -13,14 +13,11 @@ export default function MyListItem({title, imgUrl, content}) {
   }
 
   const handleDown = () => {
-   
     //(cnt -1) < 0 ? setCnt(0)
     //cnt > 0 ? setCnt(cnt - 1) : null;
-
     if(cnt > 0){
       setCnt(cnt-1);
     }
-
   }
 
     return (
