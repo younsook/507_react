@@ -13,8 +13,8 @@ export default function TailButton({caption, color, onHandle}) {
         "lime" : "hover:bg-lime-400",
     }
   return (
-   
-      <button className={`mx-2 p-4 rounded-xl text-white
+        //mx-2 좌우 마진 8px, my-2 상하 마진 8px, m-2 전체 방향 마진 8px (각 방향)
+      <button className={`mx-2 my-2 p-4 rounded-xl text-white
             hover:cursor-pointer hover:font-bold bg-cyan-700
              ${bg[color]} ${bgHover[color]}`}
              onClick={onHandle}>
