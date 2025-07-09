@@ -33,7 +33,7 @@ function App() {
             overflow-y-auto py-10
             flex flex-col justify-start items-center
            '>
-      <MyRef />
+      <BoxOffice />
       </main>
       <footer className='w-full min-h-20
            bg-black text-amber-50
