@@ -4,8 +4,8 @@ import viteLogo from '/vite.svg'
 import './App.css'
 import GroupText from './01/GroupText'
 import MyClock from './02/MyClock'
+import MyDiv from './03/MyDiv'
 import MyList from './04/MyList'
-import MyListItem from './04/MyListItem'
 import Lotto from './05/Lotto'
 import FoodMain from './06/FoodMain'
 import MyToggle from './07/MyToggle'
@@ -13,6 +13,8 @@ import MyEffect from './08/MyEffect'
 import BoxOffice from './09/BoxOffice'
 import Treaffic from './10/Treaffic'
 import MyRef from './11/MyRef'
+import Gallery from './12/Gallery'
+import Festival from './13/Festival'
 
 function App() {
 
@@ -33,7 +35,7 @@ function App() {
             overflow-y-auto py-10
             flex flex-col justify-start items-center
            '>
-      <BoxOffice />
+      <Festival />
       </main>
       <footer className='w-full min-h-20
            bg-black text-amber-50
