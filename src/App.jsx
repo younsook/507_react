@@ -20,6 +20,9 @@ import Fcst from './15/Fcst'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import AppNav from './AppNav'
 import FcstList from './15/FcstList'
+import DivMain from './16/DivMain'
+import DivMain2 from './17/DivMain'
+
 
 function App() {
 
@@ -52,6 +55,8 @@ function App() {
               <Route path='/festival' element={<Festival />}></Route>
               <Route path='/fcst' element={<Fcst />}></Route>
               <Route path='/fcstlist' element={<FcstList />}></Route>
+              <Route path='/divMain' element={<DivMain />}></Route>
+              <Route path='/div2' element={<DivMain2 />}></Route>
             </Routes>
       {/* <RouteMain /> */}
       </main>
