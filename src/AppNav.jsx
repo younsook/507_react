@@ -63,6 +63,12 @@ export default function AppNav() {
                 div17
             </div>
         </Link>
+        <Link to="/info">
+            <div className="p-2 m-1 font-bold text-xs border-amber-950 rounded bg-amber-50 
+            hover:bg-amber-500">
+                info18
+            </div>
+        </Link>
     </div>
   )
 }

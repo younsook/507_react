@@ -22,6 +22,8 @@ import AppNav from './AppNav'
 import FcstList from './15/FcstList'
 import DivMain from './16/DivMain'
 import DivMain2 from './17/DivMain'
+import Elv from './18/Elv'
+import ChargerInfo from './18/ChargerInfo'
 
 
 function App() {
@@ -57,6 +59,7 @@ function App() {
               <Route path='/fcstlist' element={<FcstList />}></Route>
               <Route path='/divMain' element={<DivMain />}></Route>
               <Route path='/div2' element={<DivMain2 />}></Route>
+              <Route path='/info' element={<ChargerInfo />}></Route>
             </Routes>
       {/* <RouteMain /> */}
       </main>
