@@ -104,9 +104,9 @@ export default function ChargerInfo() {
         console.log("totalCount",totalCount)
     },[tdata,totalCount ])
 
-    useEffect(() => {
-        getDataFetch(currentPage);
-    }, [currentPage]);
+    // useEffect(() => {
+    //     getDataFetch(currentPage);
+    // }, [currentPage]);
 
   return (
     <div className="w-full flex flex-col gap-6">
@@ -127,13 +127,29 @@ export default function ChargerInfo() {
                         dText="충전소 구분"
                         opv={Object.keys(kind)}
                         opt={Object.values(kind)}/>
-        <TailButton caption="검색" 
-                        color="blue" 
-                        onHandle={()=>getDataFetch(1)} />
+        <TailButton
+                        caption="검색"
+                        color="blue"
+                        onHandle={() => {
+                            setCurrentPage(1);
+                            getDataFetch(1);
+                        }}
+                        />
         </div>                        
         <div className="px-4">
+            <div className="flex justify-between items-center mb-2">
+  <p className="text-sm text-gray-700 dark:text-gray-300">
+    🔍 총 <span className="font-semibold text-blue-600">{totalCount}</span>건의 충전소 정보가 검색되었습니다.
+  </p>
+</div>
+             {/* 카드 영역 */}
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
                     {
+                        totalCount === 0 ? (
+        <div className="col-span-full text-center text-gray-500 text-sm p-4">
+          ⚠️ 조건에 맞는 충전소 정보가 없습니다.
+        </div>
+      ) : (
                         tdata.map(item =><TailCard 
                             key={`${item.statId}-${item.chgerId}`}
                             galTitle={item.statNm} 
@@ -143,7 +159,8 @@ export default function ChargerInfo() {
                                 ${stat[item.stat]==undefined? '': ','+stat[item.stat]}
                             `} 
                             // ,주차료${}
-                            />)
+                            />
+                        ))
                     }
                 </div>
                 <div className="w-full">
