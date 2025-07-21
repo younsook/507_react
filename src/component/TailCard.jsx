@@ -17,11 +17,14 @@ export default function TailCard({ galTitle, galWebImageUrl, galPhotographyLocat
 
   return (
     <div className="rounded-lg overflow-hidden shadow-lg bg-white dark:bg-gray-800 transition hover:scale-[1.01]">
+      {galWebImageUrl?.startsWith("http") && (
       <img
         src={galWebImageUrl}
         alt={galTitle}
         className="w-full h-48 object-cover"
       />
+       )}
+
       <div className="p-4">
         <h3 className="text-lg font-bold mb-2 text-blue-700 dark:text-blue-300
                         truncate whitespace-nowrap overflow-hidden" title={galTitle}>

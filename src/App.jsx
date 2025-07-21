@@ -41,7 +41,10 @@ function App() {
         <img src={viteLogo} alt='vite'></img>  
         </div>
         <AppNav />
-        <GroupText />
+          <span className="ml-2 mr-2"> 
+          <GroupText />
+          </span>
+       
       </header> 
       <main className='w-full flex-grow
             overflow-y-auto py-10
