@@ -49,7 +49,7 @@ export default function ChargerInfo() {
 
         ////////////////////////////////
             const apiKey = import.meta.env.VITE_DATA_API;
-            const baseUrl = "http://apis.data.go.kr/B552584/EvCharger/getChargerInfo?";
+            const baseUrl = "https://apis.data.go.kr/B552584/EvCharger/getChargerInfo?";
             let url = `${baseUrl}serviceKey=${apiKey}&numOfRows=${perPage}&pageNo=${cpage}&dataType=JSON`;
 
             if (zcodeRef.current.value !=""){
